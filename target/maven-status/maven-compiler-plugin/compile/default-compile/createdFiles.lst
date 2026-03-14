@@ -1,0 +1,4 @@
+com\example\workreport\WorkreportApplication.class
+com\example\workreport\controller\SinhVienController.class
+com\example\workreport\model\SinhVien.class
+com\example\workreport\repository\SinhVienRepository.class
