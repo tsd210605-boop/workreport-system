@@ -10,7 +10,6 @@ function SinhVien() {
       .then(res => res.json())
       .then(data => {
         console.log("DATA:", data);
-        // Đảm bảo data luôn là array
         setStudents(Array.isArray(data) ? data : []);
       })
       .catch(error => console.log("ERROR:", error));

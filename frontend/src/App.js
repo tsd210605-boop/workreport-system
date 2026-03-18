@@ -6,7 +6,9 @@ import NhomSinhVien from "./NhomSInhVien";
 import AdminDashboard from "./AdminDashboard";
 import GiangVienDashboard from "./GiangVienDashboard";
 import SinhVienDashboard from "./SinhVienDashboard";
-
+import ExerciseList from "./Exerciselist";
+import StudentProfilePage from "./StudentProfilePage";
+import "./App.css";
 function App() {
   return (
     <BrowserRouter>
@@ -19,11 +21,12 @@ function App() {
         <Route path="/giangvien" element={<GiangVienDashboard />} />
         <Route path="/sinhvien" element={<SinhVienDashboard />} />
 
-        {/* ← Thêm dòng này */}
+   
         <Route path="/danhsach" element={<SinhVien />} />
 
         <Route path="/sinhvien/:sinhVienID/nhom" element={<NhomSinhVien />} />
-
+         <Route path="/exercises" element={<ExerciseList />} />
+        <Route path="/profile" element={<StudentProfilePage />} />
       </Routes>
     </BrowserRouter>
   );
