@@ -27,11 +27,7 @@ function StudentProfileForm() {
   const handleSave = () => {
     alert("Lưu thông tin thành công!");
     setIsEditing(false);
-
-    // Sau này chỗ này gọi API update
-    // axios.put("http://localhost:8080/api/students/update", studentInfo)
-  };
-
+  }
   const handleCancel = () => {
     setIsEditing(false);
   };
@@ -118,16 +114,6 @@ function StudentProfileForm() {
               />
             </div>
 
-            <div className="form-group full-width">
-              <label>Địa chỉ</label>
-              <input
-                type="text"
-                name="diaChi"
-                value={studentInfo.diaChi}
-                onChange={handleChange}
-                disabled={!isEditing}
-              />
-            </div>
 
             <div className="form-group">
               <label>Lớp</label>

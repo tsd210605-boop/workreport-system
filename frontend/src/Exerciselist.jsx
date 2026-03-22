@@ -85,7 +85,6 @@ export default function ExerciseList() {
 
   return (
     <div style={styles.page}>
-      {/* Header */}
       <div style={styles.header}>
         <div>
           <p style={styles.headerSub}>Học kỳ 2 · 2025–2026</p>
@@ -97,8 +96,6 @@ export default function ExerciseList() {
           <StatBox label="Chưa nộp" value={mockExercises.filter(e => e.status === "Chưa nộp").length} color="#e53e3e" />
         </div>
       </div>
-
-      {/* Filters */}
       <div style={styles.filterBar}>
         <input
           style={styles.searchInput}
